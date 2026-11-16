@@ -1,0 +1,7 @@
+Interface name : Wi-Fi
+There are 1 interfaces on the system:
+
+    Name                   : Wi-Fi
+    Description            : Example 802.11ax Wireless Adapter
+    State                  : disconnected
+    Signal                 : 0%

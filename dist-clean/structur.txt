@@ -1,0 +1,227 @@
+===============================================================
+ NETFAULT ANALYZER - Network Fault Diagnosis & Root Cause Analyzer
+ Data Communication Project (3 Credits / 30 Marks)
+===============================================================
+
+---------------------------------------------------------------
+ 1) PROJECT IDEA (in one line)
+---------------------------------------------------------------
+This app performs a REAL scan of your machine's network (signal strength,
+ping, traceroute, DNS, DHCP), analyzes the data, and reports the fault
+with its ROOT CAUSE (including the OSI layer), plus a simulation mode
+as a backup for college demos.
+
+---------------------------------------------------------------
+ 2) TECH STACK
+---------------------------------------------------------------
+- Node.js backend (server.js) -> runs real Windows commands and returns data
+- HTTP/JSON API (pure Node core modules - no external dependencies)
+- HTML/CSS/JS frontend (index.html) -> GUI + Canvas visualization
+- No npm packages, no installation - just run `node server.js`
+
+---------------------------------------------------------------
+ 3) PROJECT STRUCTURE (File names)
+---------------------------------------------------------------
+NETPLUS/
+|
+|-- structur.txt            <- this file (roadmap & documentation)
+|-- package.json            <- project info + start script
+|-- start.bat               <- one-click launcher (checks node, starts server)
+|-- config.json             <- configurable: port, bind host, ping count, DNS servers, history limit
+|-- server.js               <- NODE BACKEND - real commands + API server
+|-- index.html              <- MAIN UI (GUI)
+|-- css/
+|   `-- style.css           <- styling (modern dark theme + light theme)
+|-- js/
+|   |-- analyzer.js         <- ROOT CAUSE ENGINE (rules + confidence %)
+|   |-- scenarios.js        <- 15 simulation scenarios (3 modes x 5)
+|   |-- app.js              <- UI logic + Canvas graphs + report builder + history UI
+|   `-- survey.js           <- Wi-Fi site survey: GPS + speed test + floor plan + timeline + KML
+|-- reports/                <- generated HTML/PDF reports (auto-save)
+|-- data/                   <- runtime data: surveys.json (survey points), history.json (scan history)
+|-- test_engine.js          <- engine test (all scenarios + live scan)
+|-- test_survey.js          <- survey/export/action API test suite
+|-- README.md               <- setup + run + project documentation
+`-- docs/
+    |-- report.txt           <- how to run (for the college setup)
+    `-- theory.txt           <- Data Communication theory (viva prep)
+
+---------------------------------------------------------------
+ 4) REAL DIAGNOSTICS (commands run by server.js)
+---------------------------------------------------------------
+1. netsh wlan show interfaces        -> REAL signal %, SSID, channel, auth, rates
+2. netsh wlan show networks mode=bssid -> REAL neighbor network signal scan
+3. netsh interface show interface    -> REAL link status (up/down)
+4. ipconfig /all                     -> REAL IP, gateway, subnet, DHCP, MAC
+5. ping <gateway>                    -> REAL gateway RTT, packet loss
+6. ping 8.8.8.8                      -> REAL internet RTT, loss (internet check)
+7. ping 1.1.1.1                      -> cross-check (second path)
+8. nslookup google.com               -> REAL DNS resolution time + server
+9. nslookup 8.8.8.8 / 1.1.1.1        -> extra DNS latency tests (multi-DNS check)
+10. tracert -d -h 15 8.8.8.8          -> REAL hop-by-hop path + per-hop latency
+11. arp -a                            -> REAL ARP table (gateway MAC)
+12. route print 0.0.0.0              -> default gateway (fallback)
+13. ping -f -l 1472 <gateway>        -> MTU discovery (payload 1472 = MTU 1500)
+14. ping -6 ::1 + internet IPv6 test -> IPv6 stack check
+15. ipconfig /release + /renew       -> Fix Action: DHCP renew (button in UI)
+16. ipconfig /flushdns               -> Fix Action: DNS cache flush (button in UI)
+
+EXTRA DATA EXTRACTED:
+- Gateway MAC vendor (OUI lookup from ARP table) -> shown next to gateway
+- Scan history: every scan auto-saved to data/history.json (last 25), browsable/compareable in UI
+- Gateway vendor shown on the Live tab
+
+OUTPUT PARSING: server.js parses each command's raw output into clean
+JSON that the browser consumes.
+
+---------------------------------------------------------------
+ 5) DIAGNOSIS ENGINE (analyzer.js) - The BRAIN of the project
+---------------------------------------------------------------
+Input: parsed diagnostic JSON
+Process: extract signatures, match rules
+Output: [ { fault, rootCause, osiLayer, severity, confidence%, fix } ]
+
+RULES (signature -> root cause):
+  a) WiFi signal < 50%             -> Weak signal / range issue (L2)
+  b) Signal OK + jitter > 60ms     -> WiFi interference / channel congestion (L2)
+  c) Gateway ping 100% loss        -> Link down / cable fault (L1)
+  d) Internet ping fails + gateway OK -> ISP / router WAN issue (L3)
+  e) Ping OK + DNS fails          -> DNS misconfiguration (L7)
+  f) DHCP APIPA 169.254.* IP       -> DHCP failure (L3)
+  g) Traceroute loss at hop N      -> Fault at that router/link (L3)
+  h) 20-40% loss + high RTT       -> Congestion (L3)
+  i) Duplex mismatch patterns      -> Duplex fault (L2)
+  j) APIPA + no gateway            -> DHCP server unreachable (L3)
+
+Confidence %: every rule has a weight; matching evidence raises the score.
+Severity: Critical / High / Medium / Low.
+Every root cause also has a fix suggestion.
+
+---------------------------------------------------------------
+ 6) UI (index.html + app.js) - WHAT IT SHOWS
+---------------------------------------------------------------
+Tabs:
+  TAB 1: LIVE SCAN
+    - "Run Full Diagnostics" button
+    - Animated scan sequence (command-by-command progress)
+    - Topology diagram (Canvas): PC -> Router/Gateway -> Internet server
+      each node GREEN/AMBER/RED (the fault node is red with glow)
+    - Signal gauge (0-100%) + approx dBm + neighbor networks table
+    - Traceroute graph (Canvas bars): latency per hop + loss %
+    - Fault panel: root-cause cards ranked by confidence
+    - OSI layer indicator
+    - "Save Report" -> reports/ folder (HTML)
+
+  TAB 2: SIMULATION LAB (demo backup)
+    - Connection type: LAN / WiFi / Mobile
+    - 15 scenarios (list below)
+    - Same UI visualization, but with synthetic data
+
+  TAB 3: SURVEY & MAPPING (Wi-Fi site survey: GPS + speed test + history + map/heatmap + export)
+    - Export: CSV / XLSX / JSON / PDF / KML (KML opens in Google Earth)
+    - Optional floor-plan image upload -> heatmap drawn ON the floor plan
+    - Signal timeline graph (signal % vs time for saved points)
+    - Generate HTML survey report
+  TAB 4: REPORT
+    - The complete diagnosis report is rendered inside the app
+    - Print button + "Save to File" (reports/) + Save Diagnosis PDF button
+
+  TAB 5: THEORY (viva prep)
+    - Data Communication explanation for each fault type
+    - OSI layer chart
+    - Viva Q&A list
+
+---------------------------------------------------------------
+ 6b) EXTRA FEATURES (added in final round)
+---------------------------------------------------------------
+- Scan History: every live scan auto-saves; browse, reload, compare two
+  scans side-by-side (changed values highlighted), clear history
+- Fault Stats: pie chart of fault severities across saved scans
+- Fix Actions: DHCP renew + DNS cache flush buttons (run real commands)
+- Diagnosis PDF: full report saved as PDF (reports/diagnosis_*.pdf)
+- Copy Evidence: one-click copy of the full diagnosis text
+- Topology PNG: save the topology diagram as an image
+- Gateway vendor lookup: MAC OUI -> manufacturer name (ARP-based)
+- MTU detection + IPv6 stack test in every scan
+- Multi-DNS test: resolves google.com via default + 8.8.8.8 + 1.1.1.1
+- Language toggle (English / Hindi) + Light/Dark theme toggle
+- KML export for Google Earth + floor-plan heatmap background
+- config.json: port, bind host, ping count, DNS servers, history limit
+- start.bat one-click launcher (server binds to 127.0.0.1 only = safer)
+
+---------------------------------------------------------------
+ 7) SIMULATION SCENARIOS (15 total)
+---------------------------------------------------------------
+LAN MODE (5):
+  S1. Healthy LAN                 -> No fault
+  S2. Bad Cable / Link Down       -> Physical layer fault
+  S3. Network Congestion          -> Congestion, high RTT + loss
+  S4. Duplex Mismatch             -> Data Link layer fault
+  S5. DHCP Server Down            -> APIPA, no gateway
+
+WIFI MODE (5):
+  S6. Healthy WiFi                -> No fault
+  S7. Channel Interference        -> High jitter + retransmissions
+  S8. Weak Signal / Far Range     -> Signal 30%, intermittent loss
+  S9. Authentication Failure      -> Wrong password, no connection
+  S10. Too Many Users             -> Delay spikes, airtime congestion
+
+MOBILE MODE (5):
+  S11. Healthy Mobile Network     -> No fault
+  S12. Weak Coverage              -> RSRP -110 dBm, packet loss
+  S13. APN Misconfiguration       -> No data session, no internet
+  S14. Carrier Congestion         -> High latency at peak hours
+  S15. Tower Outage               -> No service at all
+
+---------------------------------------------------------------
+ 8) BUILD LOG (created in order)
+---------------------------------------------------------------
+STEP 1  : package.json + server.js (command runner + API + parsing)
+STEP 2  : index.html + css/style.css (UI layout, dark theme)
+STEP 3  : js/analyzer.js (root cause rules engine)
+STEP 4  : js/scenarios.js (15 scenarios)
+STEP 5  : js/app.js (UI logic + Canvas client)
+STEP 6  : Tested - node server.js -> browser -> real scan works
+STEP 7  : Simulation Lab tested (all 15 scenarios, engine passes)
+STEP 8  : Report generation (reports/ folder) + in-app Report tab
+STEP 9  : README.md + docs/report.txt + docs/theory.txt
+STEP 10 : Final polish (improved UI theme) + full verification
+STEP 11 : Bug-fix round (8 bugs: DNS detection, command masking, idempotent
+          tests, HTML injection, dead code, health scoring, docs drift)
+STEP 12 : Feature round - history + compare + fault stats pie, fix actions,
+          diagnosis PDF, copy evidence, topology PNG, gateway vendor (OUI),
+          MTU + IPv6 + multi-DNS tests, floor-plan heatmap, KML export,
+          signal timeline, survey HTML report, EN/HI + light/dark theme,
+          config.json + start.bat (bound to 127.0.0.1)
+
+--------------------------------------------------------------
+ 9) HOW TO RUN (end user)
+--------------------------------------------------------------
+Step 1: double-click start.bat  (or in cmd: node server.js)
+Step 2: browser opens or go to http://127.0.0.1:3000
+Step 3: Tab 1 -> "Run Full Diagnostics" -> real scan
+Step 4: Tab 2 -> simulation demo
+Step 5: Tab 3 -> Survey & Mapping (export KML/CSV, floor plan, report)
+Step 6: Tab 4 -> view / print / save PDF report
+Optional: edit config.json (port, bind host, ping count, DNS servers)
+
+---------------------------------------------------------------
+ 10) SCORING STRATEGY (30 marks)
+---------------------------------------------------------------
+- Real working model demo          -> biggest weight
+- Explain the diagnosis logic (engine) -> viva
+- Theory tab (Data Comm concepts)  -> OSI, RSSI, DHCP, DNS
+- Printable report                 -> submission
+- README + docs                    -> documentation marks
+- Neighbor scan + jitter detection -> bonus features (impressive)
+
+---------------------------------------------------------------
+ NOTES
+---------------------------------------------------------------
+- Mobile RSRP is not directly available from a PC -> the mobile mode is
+  simulation-based. (Optional: attach a phone hotspot via WiFi to get a
+  real signal for the WiFi mode.)
+- WMI dBm is not supported by this PC's driver -> percentage is primary,
+  dBm is approximate.
+- Every scan is logged as JSON so you can debug in the browser console.
+===============================================================

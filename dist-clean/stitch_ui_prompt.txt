@@ -1,0 +1,65 @@
+=================================================================
+ GOOGLE STITCH - UI DESIGN PROMPT FOR NETPLUS AI
+ (Paste this prompt into Google Stitch)
+=================================================================
+
+You are designing the UI for "NetPlus AI" - a Network Fault Diagnosis, Root Cause Analyzer & Wi-Fi Site Survey. It is a college Data Communication project (demo + viva). It has a Node.js backend and vanilla JS frontend (no frameworks). Redesign the UI while KEEPING THE SAME HTML STRUCTURE, element IDs and class names - the JavaScript depends on them.
+
+DESIGN DIRECTION
+- "Network Operations Dashboard" look (Grafana / Datadog style): deep navy dark theme (#0a0f1e to #141b2e gradient background), cyan/teal accent (#22d3ee, #0f9488), cards with subtle borders + glass effect, monospace font (Segoe UI Mono / JetBrains Mono) for technical values, compact professional density, rounded corners, smooth hover states, subtle glow for active/fault elements. Also include a full LIGHT theme variant (body.light) - white cards, soft borders.
+- Button styles: .btn-primary (cyan-teal gradient), .btn-ghost (outline), .danger-btn (red outline). Status chips, inputs, selects, and a modal dialog component (overlay + card with title, scrollable body, action buttons).
+
+GLOBAL LAYOUT
+- Topbar: brand logo "NFA" + "NetPlus AI" title, right side: language toggle (id=btnLang), theme toggle (id=btnTheme), server status chip (id=connChip).
+- Tab navigation (class .tab-btn with data-tab, active state) with 5 panels (.tab-panel, .active):
+
+TAB 1 - LIVE SCAN (main dashboard)
+- Action bar: primary button "Run Full Diagnostics" (id=btnScan), "Cancel Scan" (btnScanCancel, hidden by default), ghost buttons: Save Report (btnSaveReport, disabled until scan), Copy Evidence (btnCopyEvidence), Evidence .txt (btnEvidenceTxt), Topology PNG (btnTopoPng), PDF Report (btnSavePdfReport). Animated horizontal progress bar (scanProgress) + status line (scanStatus).
+- 2-column grid (collapses to 1 column under 940px):
+  LEFT: "Network Topology" card with canvas (topologyCanvas, PC->Gateway->Hops->Internet nodes, green/amber/red), "WiFi Signal Strength" card with semicircular gauge canvas (signalCanvas) + meta line (signalMeta), "Neighbor Networks" table (neighborTable: SSID, Channel, Signal, Auth).
+  RIGHT: "Diagnosis & Root Cause" card: OSI layer indicator bar (osiIndicator) + fault cards (.fault-card: title, severity chip, confidence % progress bar, root cause, evidence, fix, OSI layer), "Fix Actions" card (btnDhcpRenew + btnFlushDns buttons + note), "Traceroute Path" card (bar canvas traceCanvas, hop latency + loss %), "Evidence Details" card (mono pre-formatted block, evidenceBox).
+- Full-width below: "Scan History" card - toolbar (histCount text, Compare Selected btnHistCompare, Clear History btnHistClear) + table (historyTable/historyBody: checkbox, Time, Mode, SSID/Signal, Gateway, Internet reachable, Avg RTT, Load action button; rows selectable max 2, comparison table appears in histCompareBox with green/red delta values). Then "Fault Statistics" card: donut pie canvas (statsCanvas) + color legend (statsLegend).
+
+TAB 2 - SIMULATION LAB
+- Segmented mode selector (WiFi Hotspot / LAN Cable / Mobile Internet, class .mode-btn) + "Run Simulation" primary (btnSimRun).
+- Grid of scenario cards (scenarioList, 15 cards: name, description, tag chip, selected highlight).
+- Same visualization layout as Tab 1 but simulated: topology canvas (simTopoCanvas), signal gauge (simSignalCanvas + simSignalMeta), diagnosis panel (simOsiIndicator, simFaultPanel), traceroute (simTraceCanvas).
+
+TAB 3 - SURVEY & MAPPING
+- Action bar: "Scan & Measure" primary (btnSurveyScan), location input (surveyLocName), notes input (surveyNotes), "Save Survey Point" ghost (btnSurveySave, disabled until scan), status (surveyStatus).
+- 4 small cards: Wi-Fi Details key-value table (surveyWifiTable), Internet Performance key-value table (surveySpeedTable), GPS Location box (surveyGpsBox), Signal Quality box (surveyQualityBox, colored quality label).
+- "Survey History" card: search input (histSearch), quality filter dropdown (histFilter), Compare Selected (btnCompare), counters (surveyHistCount, surveyStats), sortable table (surveyHistoryTable: Location, SSID, Band, Signal, Quality, Down/Up, Ping, Time, Actions).
+- "Survey Map" card: canvas (surveyMapCanvas) with colored markers + hover popup (mapPopup) + quality legend (Excellent green / Good yellow / Fair orange / Poor red).
+- "Signal Heatmap" card: canvas (surveyHeatCanvas) + gradient legend.
+- "Signal Timeline" card: line chart canvas (surveyTimelineCanvas, signal % over time).
+- "Export Survey Data" card: folder name input (exportFolder), export buttons (expCsv, expXlsx, expJson, expPdf, expKml - use data-export attributes), "Generate HTML Report" primary (btnSurveyReport), status (exportStatus).
+- "Floor Plan Background" card: file upload (floorPlanInput) + "Remove Floor Plan" (btnFloorClear).
+
+TAB 4 - REPORT
+- Action bar: "Print Report" primary (btnPrintReport), "Save to File" (btnSaveReport2), "PDF Report" (btnSavePdfReport2), status (reportSource).
+- Large report preview frame (reportFrame iframe, white background, print-friendly).
+
+TAB 5 - THEORY
+- 4 cards: OSI Model fault-layer mapping table (color-coded rows L7 to L1), RSSI / signal strength concept table + jitter note, Diagnosis Engine Rules list, Viva Questions list.
+
+SHARED COMPONENTS
+- Modal dialog: modalOverlay > modal (modalTitle, modalClose, modalBody, modalActions) - used for confirm dialogs and command output (pre blocks).
+- Tables .mini-table, .kv-table (key-value), .osi-table; .input fields; .btn-primary/.btn-ghost buttons; .scan-status text; .map-popup; .fault-card sev-Critical/High/Medium/Low/Healthy with severity colors; .delta-up green / .delta-down red for comparisons.
+
+CRITICAL CONSTRAINTS
+1. Preserve ALL element IDs and class names listed above EXACTLY - the JavaScript (js/app.js, js/survey.js) wires them directly.
+2. Keep data-i18n attributes on the existing elements (language toggle translates them).
+3. Canvas elements keep their width/height attributes.
+4. Dark theme is default on <body>; light theme via body.light class.
+5. Print-friendly: a @media print block hiding the topbar/nav/buttons and showing only the active tab panel in white.
+
+OUTPUT: full index.html (same ids/classes, new modern design) + style.css (dark + light themes + print block).
+
+=================================================================
+ NOTE (read before using):
+ - If Stitch only gives an image/mockup instead of full HTML,
+   save that design and hand it to the developer to apply the
+   look onto the existing css/style.css without touching the JS.
+ - Element IDs listed here MUST NOT change - js/app.js and
+   js/survey.js depend on them.
+=================================================================

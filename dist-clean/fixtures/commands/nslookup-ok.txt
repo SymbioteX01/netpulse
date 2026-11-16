@@ -1,0 +1,6 @@
+Server:  dns.example
+Address:  192.0.2.1
+
+Non-authoritative answer:
+Name:    google.com
+Addresses:  198.51.100.10

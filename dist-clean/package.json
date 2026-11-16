@@ -1,0 +1,16 @@
+{
+  "name": "netpulse",
+  "version": "1.0.0",
+  "description": "NetPulse - network fault diagnosis, root-cause analyzer and Wi-Fi site survey (Node core modules only)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test \"test/*.test.js\"",
+    "capture-fixtures": "node scripts/capture-fixtures.js",
+    "clean-package": "node scripts/make-clean-package.js"
+  },
+  "keywords": ["network", "diagnosis", "root-cause", "data-communication"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {}
+}

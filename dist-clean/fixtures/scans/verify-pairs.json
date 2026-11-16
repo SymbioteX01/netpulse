@@ -1,0 +1,243 @@
+{
+  "_comment": "HAND-WRITTEN fixtures for /api/verify. All values are invented (documentation IP ranges 192.0.2.0/24 and 198.51.100.0/24, made-up MACs). Not captures of a real machine.",
+  "resolved": {
+    "before": {
+      "id": "FIX-RESOLVED-BEFORE",
+      "data": {
+        "mode": "lan",
+        "wifi": { "available": false, "connected": false, "data": null },
+        "connectivity": {
+          "gateway": "192.0.2.1", "hasGateway": true, "gatewayReachable": true, "internetReachable": true,
+          "pings": {
+            "gateway": { "sent": 5, "received": 3, "lost": 2, "lossPct": 45, "min": 5, "max": 30, "avg": 18, "jitter": 6.5, "rttRange": 25, "times": [5, 30, 12, 20, 22] },
+            "internet": { "sent": 5, "received": 4, "lost": 1, "lossPct": 20, "min": 130, "max": 150, "avg": 140, "jitter": 5, "rttRange": 20, "times": [130, 150, 135, 140, 145] },
+            "alt": { "sent": 5, "received": 4, "lost": 1, "lossPct": 20, "min": 128, "max": 148, "avg": 138, "jitter": 5, "rttRange": 20, "times": [128, 148, 133, 138, 143] }
+          },
+          "activeIface": { "name": "Ethernet", "ipv4": "192.0.2.50", "subnet": "255.255.255.0", "gateway": "192.0.2.1", "dhcp": true, "dhcpServer": "192.0.2.1", "mac": "02-00-00-00-00-02", "apipa": false }
+        },
+        "dns": { "server": "192.0.2.1", "address": "192.0.2.1", "status": "ok", "lookupMs": 30 },
+        "trace": { "hops": [{ "hop": 1, "times": [1, 1, 1], "lossPct": 0, "ip": "192.0.2.1" }] },
+        "neighbors": [],
+        "interfaces": [{ "name": "Ethernet", "adminState": "Enabled", "state": "Connected", "type": "Dedicated" }],
+        "mtu": { "payload": 1472, "mtu": 1500 },
+        "ipv6": { "enabled": true, "loopbackOk": true, "internetOk": false },
+        "dataQuality": { "platform": "win32", "commands": [{ "name": "ipconfig /all", "ok": true, "emptyParse": false }], "warnings": [], "locationPermissionBlocked": false, "coreCommandsFailed": [] }
+      }
+    },
+    "after": {
+      "id": "FIX-RESOLVED-AFTER",
+      "data": {
+        "mode": "lan",
+        "wifi": { "available": false, "connected": false, "data": null },
+        "connectivity": {
+          "gateway": "192.0.2.1", "hasGateway": true, "gatewayReachable": true, "internetReachable": true,
+          "pings": {
+            "gateway": { "sent": 5, "received": 5, "lost": 0, "lossPct": 0, "min": 2, "max": 3, "avg": 2, "jitter": 0.5, "rttRange": 1, "times": [2, 2, 3, 2, 3] },
+            "internet": { "sent": 5, "received": 5, "lost": 0, "lossPct": 0, "min": 44, "max": 46, "avg": 45, "jitter": 1, "rttRange": 2, "times": [44, 45, 46, 45, 45] },
+            "alt": { "sent": 5, "received": 5, "lost": 0, "lossPct": 0, "min": 41, "max": 43, "avg": 42, "jitter": 1, "rttRange": 2, "times": [41, 42, 43, 42, 42] }
+          },
+          "activeIface": { "name": "Ethernet", "ipv4": "192.0.2.50", "subnet": "255.255.255.0", "gateway": "192.0.2.1", "dhcp": true, "dhcpServer": "192.0.2.1", "mac": "02-00-00-00-00-02", "apipa": false }
+        },
+        "dns": { "server": "192.0.2.1", "address": "192.0.2.1", "status": "ok", "lookupMs": 25 },
+        "trace": { "hops": [{ "hop": 1, "times": [1, 1, 1], "lossPct": 0, "ip": "192.0.2.1" }] },
+        "neighbors": [],
+        "interfaces": [{ "name": "Ethernet", "adminState": "Enabled", "state": "Connected", "type": "Dedicated" }],
+        "mtu": { "payload": 1472, "mtu": 1500 },
+        "ipv6": { "enabled": true, "loopbackOk": true, "internetOk": false },
+        "dataQuality": { "platform": "win32", "commands": [{ "name": "ipconfig /all", "ok": true, "emptyParse": false }], "warnings": [], "locationPermissionBlocked": false, "coreCommandsFailed": [] }
+      }
+    }
+  },
+  "improved": {
+    "before": {
+      "id": "FIX-IMPROVED-BEFORE",
+      "data": {
+        "mode": "lan",
+        "wifi": { "available": false, "connected": false, "data": null },
+        "connectivity": {
+          "gateway": "192.0.2.1", "hasGateway": true, "gatewayReachable": true, "internetReachable": true,
+          "pings": {
+            "gateway": { "sent": 5, "received": 3, "lost": 2, "lossPct": 45, "min": 5, "max": 30, "avg": 18, "jitter": 6.5, "rttRange": 25, "times": [5, 30, 12, 20, 22] },
+            "internet": { "sent": 5, "received": 4, "lost": 1, "lossPct": 25, "min": 170, "max": 190, "avg": 180, "jitter": 5, "rttRange": 20, "times": [170, 190, 175, 180, 185] },
+            "alt": { "sent": 5, "received": 4, "lost": 1, "lossPct": 22, "min": 168, "max": 188, "avg": 178, "jitter": 5, "rttRange": 20, "times": [168, 188, 173, 178, 183] }
+          },
+          "activeIface": { "name": "Ethernet", "ipv4": "192.0.2.50", "subnet": "255.255.255.0", "gateway": "192.0.2.1", "dhcp": true, "dhcpServer": "192.0.2.1", "mac": "02-00-00-00-00-02", "apipa": false }
+        },
+        "dns": { "server": "192.0.2.1", "address": "192.0.2.1", "status": "ok", "lookupMs": 60 },
+        "trace": { "hops": [{ "hop": 1, "times": [1, 1, 1], "lossPct": 0, "ip": "192.0.2.1" }] },
+        "neighbors": [],
+        "interfaces": [{ "name": "Ethernet", "adminState": "Enabled", "state": "Connected", "type": "Dedicated" }],
+        "mtu": { "payload": 1472, "mtu": 1500 },
+        "ipv6": { "enabled": true, "loopbackOk": true, "internetOk": false },
+        "dataQuality": { "platform": "win32", "commands": [{ "name": "ipconfig /all", "ok": true, "emptyParse": false }], "warnings": [], "locationPermissionBlocked": false, "coreCommandsFailed": [] }
+      }
+    },
+    "after": {
+      "id": "FIX-IMPROVED-AFTER",
+      "data": {
+        "mode": "lan",
+        "wifi": { "available": false, "connected": false, "data": null },
+        "connectivity": {
+          "gateway": "192.0.2.1", "hasGateway": true, "gatewayReachable": true, "internetReachable": true,
+          "pings": {
+            "gateway": { "sent": 5, "received": 5, "lost": 0, "lossPct": 0, "min": 2, "max": 3, "avg": 2, "jitter": 0.5, "rttRange": 1, "times": [2, 2, 3, 2, 3] },
+            "internet": { "sent": 5, "received": 4, "lost": 1, "lossPct": 25, "min": 170, "max": 190, "avg": 180, "jitter": 5, "rttRange": 20, "times": [170, 190, 175, 180, 185] },
+            "alt": { "sent": 5, "received": 4, "lost": 1, "lossPct": 22, "min": 168, "max": 188, "avg": 178, "jitter": 5, "rttRange": 20, "times": [168, 188, 173, 178, 183] }
+          },
+          "activeIface": { "name": "Ethernet", "ipv4": "192.0.2.50", "subnet": "255.255.255.0", "gateway": "192.0.2.1", "dhcp": true, "dhcpServer": "192.0.2.1", "mac": "02-00-00-00-00-02", "apipa": false }
+        },
+        "dns": { "server": "192.0.2.1", "address": "192.0.2.1", "status": "ok", "lookupMs": 60 },
+        "trace": { "hops": [{ "hop": 1, "times": [1, 1, 1], "lossPct": 0, "ip": "192.0.2.1" }] },
+        "neighbors": [],
+        "interfaces": [{ "name": "Ethernet", "adminState": "Enabled", "state": "Connected", "type": "Dedicated" }],
+        "mtu": { "payload": 1472, "mtu": 1500 },
+        "ipv6": { "enabled": true, "loopbackOk": true, "internetOk": false },
+        "dataQuality": { "platform": "win32", "commands": [{ "name": "ipconfig /all", "ok": true, "emptyParse": false }], "warnings": [], "locationPermissionBlocked": false, "coreCommandsFailed": [] }
+      }
+    }
+  },
+  "unchanged": {
+    "before": {
+      "id": "FIX-UNCHANGED-BEFORE",
+      "data": {
+        "mode": "lan",
+        "wifi": { "available": false, "connected": false, "data": null },
+        "connectivity": {
+          "gateway": "192.0.2.1", "hasGateway": true, "gatewayReachable": true, "internetReachable": true,
+          "pings": {
+            "gateway": { "sent": 5, "received": 5, "lost": 0, "lossPct": 0, "min": 2, "max": 3, "avg": 2, "jitter": 0.5, "rttRange": 1, "times": [2, 2, 3, 2, 3] },
+            "internet": { "sent": 5, "received": 4, "lost": 1, "lossPct": 25, "min": 170, "max": 190, "avg": 180, "jitter": 5, "rttRange": 20, "times": [170, 190, 175, 180, 185] },
+            "alt": { "sent": 5, "received": 4, "lost": 1, "lossPct": 22, "min": 168, "max": 188, "avg": 178, "jitter": 5, "rttRange": 20, "times": [168, 188, 173, 178, 183] }
+          },
+          "activeIface": { "name": "Ethernet", "ipv4": "192.0.2.50", "subnet": "255.255.255.0", "gateway": "192.0.2.1", "dhcp": true, "dhcpServer": "192.0.2.1", "mac": "02-00-00-00-00-02", "apipa": false }
+        },
+        "dns": { "server": "192.0.2.1", "address": "192.0.2.1", "status": "ok", "lookupMs": 60 },
+        "trace": { "hops": [{ "hop": 1, "times": [1, 1, 1], "lossPct": 0, "ip": "192.0.2.1" }] },
+        "neighbors": [],
+        "interfaces": [{ "name": "Ethernet", "adminState": "Enabled", "state": "Connected", "type": "Dedicated" }],
+        "mtu": { "payload": 1472, "mtu": 1500 },
+        "ipv6": { "enabled": true, "loopbackOk": true, "internetOk": false },
+        "dataQuality": { "platform": "win32", "commands": [{ "name": "ipconfig /all", "ok": true, "emptyParse": false }], "warnings": [], "locationPermissionBlocked": false, "coreCommandsFailed": [] }
+      }
+    },
+    "after": {
+      "id": "FIX-UNCHANGED-AFTER",
+      "data": {
+        "mode": "lan",
+        "wifi": { "available": false, "connected": false, "data": null },
+        "connectivity": {
+          "gateway": "192.0.2.1", "hasGateway": true, "gatewayReachable": true, "internetReachable": true,
+          "pings": {
+            "gateway": { "sent": 5, "received": 5, "lost": 0, "lossPct": 0, "min": 2, "max": 3, "avg": 2, "jitter": 0.5, "rttRange": 1, "times": [2, 2, 3, 2, 3] },
+            "internet": { "sent": 5, "received": 4, "lost": 1, "lossPct": 25, "min": 170, "max": 190, "avg": 180, "jitter": 5, "rttRange": 20, "times": [170, 190, 175, 180, 185] },
+            "alt": { "sent": 5, "received": 4, "lost": 1, "lossPct": 22, "min": 168, "max": 188, "avg": 178, "jitter": 5, "rttRange": 20, "times": [168, 188, 173, 178, 183] }
+          },
+          "activeIface": { "name": "Ethernet", "ipv4": "192.0.2.50", "subnet": "255.255.255.0", "gateway": "192.0.2.1", "dhcp": true, "dhcpServer": "192.0.2.1", "mac": "02-00-00-00-00-02", "apipa": false }
+        },
+        "dns": { "server": "192.0.2.1", "address": "192.0.2.1", "status": "ok", "lookupMs": 61 },
+        "trace": { "hops": [{ "hop": 1, "times": [1, 1, 1], "lossPct": 0, "ip": "192.0.2.1" }] },
+        "neighbors": [],
+        "interfaces": [{ "name": "Ethernet", "adminState": "Enabled", "state": "Connected", "type": "Dedicated" }],
+        "mtu": { "payload": 1472, "mtu": 1500 },
+        "ipv6": { "enabled": true, "loopbackOk": true, "internetOk": false },
+        "dataQuality": { "platform": "win32", "commands": [{ "name": "ipconfig /all", "ok": true, "emptyParse": false }], "warnings": [], "locationPermissionBlocked": false, "coreCommandsFailed": [] }
+      }
+    }
+  },
+  "worse": {
+    "before": {
+      "id": "FIX-WORSE-BEFORE",
+      "data": {
+        "mode": "lan",
+        "wifi": { "available": false, "connected": false, "data": null },
+        "connectivity": {
+          "gateway": "192.0.2.1", "hasGateway": true, "gatewayReachable": true, "internetReachable": true,
+          "pings": {
+            "gateway": { "sent": 5, "received": 5, "lost": 0, "lossPct": 0, "min": 2, "max": 3, "avg": 2, "jitter": 0.5, "rttRange": 1, "times": [2, 2, 3, 2, 3] },
+            "internet": { "sent": 5, "received": 5, "lost": 0, "lossPct": 0, "min": 44, "max": 46, "avg": 45, "jitter": 1, "rttRange": 2, "times": [44, 45, 46, 45, 45] },
+            "alt": { "sent": 5, "received": 5, "lost": 0, "lossPct": 0, "min": 41, "max": 43, "avg": 42, "jitter": 1, "rttRange": 2, "times": [41, 42, 43, 42, 42] }
+          },
+          "activeIface": { "name": "Ethernet", "ipv4": "192.0.2.50", "subnet": "255.255.255.0", "gateway": "192.0.2.1", "dhcp": true, "dhcpServer": "192.0.2.1", "mac": "02-00-00-00-00-02", "apipa": false }
+        },
+        "dns": { "server": "192.0.2.1", "address": "192.0.2.1", "status": "ok", "lookupMs": 25 },
+        "trace": { "hops": [{ "hop": 1, "times": [1, 1, 1], "lossPct": 0, "ip": "192.0.2.1" }] },
+        "neighbors": [],
+        "interfaces": [{ "name": "Ethernet", "adminState": "Enabled", "state": "Connected", "type": "Dedicated" }],
+        "mtu": { "payload": 1472, "mtu": 1500 },
+        "ipv6": { "enabled": true, "loopbackOk": true, "internetOk": false },
+        "dataQuality": { "platform": "win32", "commands": [{ "name": "ipconfig /all", "ok": true, "emptyParse": false }], "warnings": [], "locationPermissionBlocked": false, "coreCommandsFailed": [] }
+      }
+    },
+    "after": {
+      "id": "FIX-WORSE-AFTER",
+      "data": {
+        "mode": "lan",
+        "wifi": { "available": false, "connected": false, "data": null },
+        "connectivity": {
+          "gateway": "192.0.2.1", "hasGateway": true, "gatewayReachable": true, "internetReachable": true,
+          "pings": {
+            "gateway": { "sent": 5, "received": 3, "lost": 2, "lossPct": 45, "min": 5, "max": 30, "avg": 18, "jitter": 6.5, "rttRange": 25, "times": [5, 30, 12, 20, 22] },
+            "internet": { "sent": 5, "received": 4, "lost": 1, "lossPct": 20, "min": 130, "max": 150, "avg": 140, "jitter": 5, "rttRange": 20, "times": [130, 150, 135, 140, 145] },
+            "alt": { "sent": 5, "received": 4, "lost": 1, "lossPct": 20, "min": 128, "max": 148, "avg": 138, "jitter": 5, "rttRange": 20, "times": [128, 148, 133, 138, 143] }
+          },
+          "activeIface": { "name": "Ethernet", "ipv4": "192.0.2.50", "subnet": "255.255.255.0", "gateway": "192.0.2.1", "dhcp": true, "dhcpServer": "192.0.2.1", "mac": "02-00-00-00-00-02", "apipa": false }
+        },
+        "dns": { "server": "192.0.2.1", "address": "192.0.2.1", "status": "ok", "lookupMs": 30 },
+        "trace": { "hops": [{ "hop": 1, "times": [1, 1, 1], "lossPct": 0, "ip": "192.0.2.1" }] },
+        "neighbors": [],
+        "interfaces": [{ "name": "Ethernet", "adminState": "Enabled", "state": "Connected", "type": "Dedicated" }],
+        "mtu": { "payload": 1472, "mtu": 1500 },
+        "ipv6": { "enabled": true, "loopbackOk": true, "internetOk": false },
+        "dataQuality": { "platform": "win32", "commands": [{ "name": "ipconfig /all", "ok": true, "emptyParse": false }], "warnings": [], "locationPermissionBlocked": false, "coreCommandsFailed": [] }
+      }
+    }
+  },
+  "inconclusive": {
+    "before": {
+      "id": "FIX-INCONCLUSIVE-BEFORE",
+      "data": {
+        "mode": "lan",
+        "wifi": { "available": false, "connected": false, "data": null },
+        "connectivity": {
+          "gateway": "192.0.2.1", "hasGateway": true, "gatewayReachable": true, "internetReachable": true,
+          "pings": {
+            "gateway": { "sent": 5, "received": 5, "lost": 0, "lossPct": 0, "min": 2, "max": 3, "avg": 2, "jitter": 0.5, "rttRange": 1, "times": [2, 2, 3, 2, 3] },
+            "internet": { "sent": 5, "received": 5, "lost": 0, "lossPct": 0, "min": 44, "max": 46, "avg": 45, "jitter": 1, "rttRange": 2, "times": [44, 45, 46, 45, 45] },
+            "alt": { "sent": 5, "received": 5, "lost": 0, "lossPct": 0, "min": 41, "max": 43, "avg": 42, "jitter": 1, "rttRange": 2, "times": [41, 42, 43, 42, 42] }
+          },
+          "activeIface": { "name": "Ethernet", "ipv4": "192.0.2.50", "subnet": "255.255.255.0", "gateway": "192.0.2.1", "dhcp": true, "dhcpServer": "192.0.2.1", "mac": "02-00-00-00-00-02", "apipa": false }
+        },
+        "dns": { "server": "192.0.2.1", "address": "192.0.2.1", "status": "ok", "lookupMs": 25 },
+        "trace": { "hops": [] },
+        "neighbors": [],
+        "interfaces": [],
+        "mtu": { "payload": 1472, "mtu": 1500 },
+        "ipv6": { "enabled": true, "loopbackOk": true, "internetOk": false },
+        "dataQuality": { "platform": "win32", "commands": [{ "name": "ipconfig /all", "ok": true, "emptyParse": false }], "warnings": [], "locationPermissionBlocked": false, "coreCommandsFailed": [] }
+      }
+    },
+    "after": {
+      "id": "FIX-INCONCLUSIVE-AFTER",
+      "data": {
+        "mode": "lan",
+        "wifi": { "available": false, "connected": false, "data": null },
+        "connectivity": {
+          "gateway": "192.0.2.1", "hasGateway": true, "gatewayReachable": true, "internetReachable": true,
+          "pings": {
+            "gateway": { "sent": 5, "received": 5, "lost": 0, "lossPct": 0, "min": 2, "max": 3, "avg": 2, "jitter": 0.5, "rttRange": 1, "times": [2, 2, 3, 2, 3] },
+            "internet": { "sent": 5, "received": 5, "lost": 0, "lossPct": 0, "min": 44, "max": 46, "avg": 45, "jitter": 1, "rttRange": 2, "times": [44, 45, 46, 45, 45] },
+            "alt": { "sent": 5, "received": 5, "lost": 0, "lossPct": 0, "min": 41, "max": 43, "avg": 42, "jitter": 1, "rttRange": 2, "times": [41, 42, 43, 42, 42] }
+          },
+          "activeIface": { "name": "Ethernet", "ipv4": "192.0.2.50", "subnet": "255.255.255.0", "gateway": "192.0.2.1", "dhcp": true, "dhcpServer": "192.0.2.1", "mac": "02-00-00-00-00-02", "apipa": false }
+        },
+        "dns": { "server": "192.0.2.1", "address": "192.0.2.1", "status": "ok", "lookupMs": 25 },
+        "trace": { "hops": [] },
+        "neighbors": [],
+        "interfaces": [],
+        "mtu": { "payload": 1472, "mtu": 1500 },
+        "ipv6": { "enabled": true, "loopbackOk": true, "internetOk": false },
+        "dataQuality": { "platform": "win32", "commands": [{ "name": "ipconfig /all", "ok": true, "emptyParse": false }], "warnings": [], "locationPermissionBlocked": true, "coreCommandsFailed": [] }
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+Network shell commands need location permission to access WLAN information
