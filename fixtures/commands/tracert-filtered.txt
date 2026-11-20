@@ -1,0 +1,8 @@
+Tracing route to 8.8.8.8 over a maximum of 15 hops
+
+  1    <1 ms    <1 ms    <1 ms  192.0.2.1
+  2     *        *        *     Request timed out.
+  3    12 ms    11 ms    12 ms  198.51.100.1
+  4    18 ms    17 ms    19 ms  8.8.8.8
+
+Trace complete.

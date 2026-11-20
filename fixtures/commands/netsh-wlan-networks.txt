@@ -1,0 +1,20 @@
+Interface name : Wi-Fi
+There are 2 networks currently visible.
+
+SSID 1 : ExampleNet
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP
+    BSSID 1                 : 02:11:22:33:44:55
+         Signal             : 82%
+         Radio type         : 802.11n
+         Channel            : 6
+
+SSID 2 : Neighbor-One
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP
+    BSSID 1                 : 02:11:22:33:44:66
+         Signal             : 55%
+         Radio type         : 802.11n
+         Channel            : 6

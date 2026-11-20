@@ -1,0 +1,15 @@
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : TESTHOST
+   Node Type . . . . . . . . . . . . : Hybrid
+
+Ethernet adapter Ethernet:
+
+   Description . . . . . . . . . . . : Example PCIe GbE Family Controller
+   Physical Address. . . . . . . . . : 02-00-00-00-00-03
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   Autoconfiguration IPv4 Address. . : 169.254.10.20(Preferred)
+   Subnet Mask . . . . . . . . . . . : 255.255.0.0
+   Default Gateway . . . . . . . . . :
+   DHCP Server . . . . . . . . . . . :

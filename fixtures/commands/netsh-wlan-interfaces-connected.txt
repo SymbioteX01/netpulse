@@ -1,0 +1,21 @@
+Interface name : Wi-Fi
+There are 1 interfaces on the system:
+
+    Name                   : Wi-Fi
+    Description            : Example 802.11ax Wireless Adapter
+    GUID                   : 00000000-0000-0000-0000-000000000000
+    Physical address       : 02:00:00:00:00:01
+    Interface type         : Primary
+    State                  : connected
+    SSID                   : ExampleNet
+    BSSID                  : 02:11:22:33:44:55
+    Network type           : Infrastructure
+    Radio type             : 802.11n
+    Authentication         : WPA2-Personal
+    Cipher                 : CCMP
+    Connection mode        : Auto Connect
+    Channel                : 6
+    Receive rate (Mbps)    : 65
+    Transmit rate (Mbps)   : 65
+    Signal                 : 82%
+    Profile                : ExampleNet

@@ -1,0 +1,4 @@
+Interface: 192.0.2.50 --- 0x4
+  Internet Address      Physical Address      Type
+  192.0.2.1             02-11-22-33-44-55     dynamic
+  192.0.2.255           ff-ff-ff-ff-ff-ff     static
