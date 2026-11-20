@@ -1,0 +1,132 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Length 3916 >>
+stream
+BT /F2 17 Tf 46 796 Td (NetPulse - Diagnosis Report) Tj ET
+BT /F1 9 Tf 46 778 Td (Generated: 10/18/2026, 12:56:22 PM) Tj ET
+BT /F1 9 Tf 46 767 Td (Status: Healthy | Health: 95%) Tj ET
+BT /F1 9 Tf 46 756 Td (OSI Layer: -) Tj ET
+BT /F2 12 Tf 46 740 Td (Findings & Root Cause) Tj ET
+BT /F2 9 Tf 46 726 Td (Fault) Tj ET
+BT /F2 9 Tf 286 726 Td (Severity) Tj ET
+BT /F2 9 Tf 365 726 Td (Confidence) Tj ET
+BT /F2 9 Tf 453 726 Td (OSI Layer) Tj ET
+0.82 0.84 0.88 rg 46 714 503 0.7 re f
+BT /F1 9 Tf 46 714 Td (No Fault Detected) Tj ET
+BT /F1 9 Tf 286 714 Td (Healthy) Tj ET
+BT /F1 9 Tf 365 714 Td (90%) Tj ET
+BT /F1 9 Tf 453 714 Td (Layer 2 - Data Li~) Tj ET
+BT /F1 9 Tf 46 704 Td (LAN Cable Not Connected) Tj ET
+BT /F1 9 Tf 286 704 Td (Low) Tj ET
+BT /F1 9 Tf 365 704 Td (80%) Tj ET
+BT /F1 9 Tf 453 704 Td (Layer 1 - Physical) Tj ET
+BT /F2 12 Tf 46 688 Td (Traceroute) Tj ET
+BT /F2 9 Tf 46 674 Td (Hop) Tj ET
+BT /F2 9 Tf 106 674 Td (IP) Tj ET
+BT /F2 9 Tf 293 674 Td (Times \(ms\)) Tj ET
+BT /F2 9 Tf 481 674 Td (Loss) Tj ET
+0.82 0.84 0.88 rg 46 662 503 0.7 re f
+BT /F1 9 Tf 46 662 Td (1) Tj ET
+BT /F1 9 Tf 106 662 Td (10.115.29.39) Tj ET
+BT /F1 9 Tf 293 662 Td (2, 2, 1) Tj ET
+BT /F1 9 Tf 481 662 Td (0%) Tj ET
+BT /F1 9 Tf 46 652 Td (2) Tj ET
+BT /F1 9 Tf 106 652 Td (192.168.17.10) Tj ET
+BT /F1 9 Tf 293 652 Td (128, 221, 224) Tj ET
+BT /F1 9 Tf 481 652 Td (0%) Tj ET
+BT /F1 9 Tf 46 641 Td (3) Tj ET
+BT /F1 9 Tf 106 641 Td (192.168.16.205) Tj ET
+BT /F1 9 Tf 293 641 Td (15, 19, 13) Tj ET
+BT /F1 9 Tf 481 641 Td (0%) Tj ET
+BT /F1 9 Tf 46 631 Td (4) Tj ET
+BT /F1 9 Tf 106 631 Td (192.168.19.3) Tj ET
+BT /F1 9 Tf 293 631 Td (13, 20, 19) Tj ET
+BT /F1 9 Tf 481 631 Td (0%) Tj ET
+BT /F1 9 Tf 46 620 Td (5) Tj ET
+BT /F1 9 Tf 106 620 Td (192.168.19.33) Tj ET
+BT /F1 9 Tf 293 620 Td (13, 14, 18) Tj ET
+BT /F1 9 Tf 481 620 Td (0%) Tj ET
+BT /F1 9 Tf 46 610 Td (6) Tj ET
+BT /F1 9 Tf 106 610 Td (10.188.98.203) Tj ET
+BT /F1 9 Tf 293 610 Td (14, 15, 15) Tj ET
+BT /F1 9 Tf 481 610 Td (0%) Tj ET
+BT /F1 9 Tf 46 599 Td (7) Tj ET
+BT /F1 9 Tf 106 599 Td (202.56.233.182) Tj ET
+BT /F1 9 Tf 293 599 Td (22, 28, 22) Tj ET
+BT /F1 9 Tf 481 599 Td (0%) Tj ET
+BT /F1 9 Tf 46 589 Td (8) Tj ET
+BT /F1 9 Tf 106 589 Td (202.56.233.181) Tj ET
+BT /F1 9 Tf 293 589 Td (20, 15, 13) Tj ET
+BT /F1 9 Tf 481 589 Td (0%) Tj ET
+BT /F1 9 Tf 46 578 Td (9) Tj ET
+BT /F1 9 Tf 106 578 Td (116.119.161.198) Tj ET
+BT /F1 9 Tf 293 578 Td (17, 17, 33) Tj ET
+BT /F1 9 Tf 481 578 Td (0%) Tj ET
+BT /F1 9 Tf 46 568 Td (10) Tj ET
+BT /F1 9 Tf 106 568 Td (72.14.212.48) Tj ET
+BT /F1 9 Tf 293 568 Td (22, 29, 23) Tj ET
+BT /F1 9 Tf 481 568 Td (0%) Tj ET
+BT /F1 9 Tf 46 557 Td (11) Tj ET
+BT /F1 9 Tf 106 557 Td (142.251.225.29) Tj ET
+BT /F1 9 Tf 293 557 Td (20, 18, 30) Tj ET
+BT /F1 9 Tf 481 557 Td (0%) Tj ET
+BT /F1 9 Tf 46 547 Td (12) Tj ET
+BT /F1 9 Tf 106 547 Td (142.251.69.103) Tj ET
+BT /F1 9 Tf 293 547 Td (22, 19, 19) Tj ET
+BT /F1 9 Tf 481 547 Td (0%) Tj ET
+BT /F1 9 Tf 46 536 Td (13) Tj ET
+BT /F1 9 Tf 106 536 Td (8.8.8.8) Tj ET
+BT /F1 9 Tf 293 536 Td (21, 20, 22) Tj ET
+BT /F1 9 Tf 481 536 Td (0%) Tj ET
+BT /F2 12 Tf 46 521 Td (Summary) Tj ET
+BT /F2 9 Tf 46 507 Td (Status) Tj ET
+BT /F1 9 Tf 196 507 Td (Healthy) Tj ET
+BT /F2 9 Tf 46 496 Td (Health Score) Tj ET
+BT /F1 9 Tf 196 496 Td (95%) Tj ET
+BT /F2 9 Tf 46 485 Td (OSI Layer) Tj ET
+BT /F1 9 Tf 196 485 Td (-) Tj ET
+BT /F2 9 Tf 46 474 Td (Interface) Tj ET
+BT /F1 9 Tf 196 474 Td (Wi-Fi \(10.115.29.214\)) Tj ET
+BT /F2 9 Tf 46 463 Td (Gateway) Tj ET
+BT /F1 9 Tf 196 463 Td (10.115.29.39 [Unknown]) Tj ET
+BT /F2 9 Tf 46 452 Td (WiFi Signal) Tj ET
+BT /F1 9 Tf 196 452 Td (82% \(Ayush's A17\)) Tj ET
+BT /F2 9 Tf 46 441 Td (Internet) Tj ET
+BT /F1 9 Tf 196 441 Td (Reachable) Tj ET
+BT /F2 9 Tf 46 430 Td (DNS) Tj ET
+BT /F1 9 Tf 196 430 Td (UnKnown \(137ms\)) Tj ET
+BT /F2 9 Tf 46 419 Td (MTU) Tj ET
+BT /F1 9 Tf 196 419 Td (1500 bytes) Tj ET
+BT /F2 9 Tf 46 408 Td (IPv6) Tj ET
+BT /F1 9 Tf 196 408 Td (Enabled \(internet OK\)) Tj ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000000 00000 n 
+0000000049 00000 n 
+0000000106 00000 n 
+0000000242 00000 n 
+0000000339 00000 n 
+0000000441 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+4409
+%%EOF

@@ -1,0 +1,128 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Length 3729 >>
+stream
+BT /F2 17 Tf 46 796 Td (NetPlus AI - Diagnosis Report) Tj ET
+BT /F1 9 Tf 46 778 Td (Generated: 7/8/2026, 1:30:23 am) Tj ET
+BT /F1 9 Tf 46 767 Td (Status: Healthy | Health: 100%) Tj ET
+BT /F1 9 Tf 46 756 Td (OSI Layer: -) Tj ET
+BT /F2 12 Tf 46 740 Td (Findings & Root Cause) Tj ET
+BT /F2 9 Tf 46 726 Td (Fault) Tj ET
+BT /F2 9 Tf 286 726 Td (Severity) Tj ET
+BT /F2 9 Tf 365 726 Td (Confidence) Tj ET
+BT /F2 9 Tf 453 726 Td (OSI Layer) Tj ET
+0.82 0.84 0.88 rg 46 714 503 0.7 re f
+BT /F2 12 Tf 46 709 Td (Traceroute) Tj ET
+BT /F2 9 Tf 46 695 Td (Hop) Tj ET
+BT /F2 9 Tf 106 695 Td (IP) Tj ET
+BT /F2 9 Tf 293 695 Td (Times \(ms\)) Tj ET
+BT /F2 9 Tf 481 695 Td (Loss) Tj ET
+0.82 0.84 0.88 rg 46 683 503 0.7 re f
+BT /F1 9 Tf 46 683 Td (1) Tj ET
+BT /F1 9 Tf 106 683 Td (10.134.148.168) Tj ET
+BT /F1 9 Tf 293 683 Td (6, 3, 2) Tj ET
+BT /F1 9 Tf 481 683 Td (0%) Tj ET
+BT /F1 9 Tf 46 673 Td (2) Tj ET
+BT /F1 9 Tf 106 673 Td (192.168.29.10) Tj ET
+BT /F1 9 Tf 293 673 Td (45, 231, 50) Tj ET
+BT /F1 9 Tf 481 673 Td (0%) Tj ET
+BT /F1 9 Tf 46 662 Td (3) Tj ET
+BT /F1 9 Tf 106 662 Td (192.168.28.37) Tj ET
+BT /F1 9 Tf 293 662 Td (71, 31, 62) Tj ET
+BT /F1 9 Tf 481 662 Td (0%) Tj ET
+BT /F1 9 Tf 46 652 Td (4) Tj ET
+BT /F1 9 Tf 106 652 Td (192.168.31.4) Tj ET
+BT /F1 9 Tf 293 652 Td (55, 23, 41) Tj ET
+BT /F1 9 Tf 481 652 Td (0%) Tj ET
+BT /F1 9 Tf 46 641 Td (5) Tj ET
+BT /F1 9 Tf 106 641 Td (192.168.31.33) Tj ET
+BT /F1 9 Tf 293 641 Td (54, 61, 36) Tj ET
+BT /F1 9 Tf 481 641 Td (0%) Tj ET
+BT /F1 9 Tf 46 631 Td (6) Tj ET
+BT /F1 9 Tf 106 631 Td (192.168.251.107) Tj ET
+BT /F1 9 Tf 293 631 Td (57, 38, 60) Tj ET
+BT /F1 9 Tf 481 631 Td (0%) Tj ET
+BT /F1 9 Tf 46 620 Td (7) Tj ET
+BT /F1 9 Tf 106 620 Td (125.20.207.126) Tj ET
+BT /F1 9 Tf 293 620 Td (58, 33, 31) Tj ET
+BT /F1 9 Tf 481 620 Td (0%) Tj ET
+BT /F1 9 Tf 46 610 Td (8) Tj ET
+BT /F1 9 Tf 106 610 Td (125.20.207.125) Tj ET
+BT /F1 9 Tf 293 610 Td (40, 39, 50) Tj ET
+BT /F1 9 Tf 481 610 Td (0%) Tj ET
+BT /F1 9 Tf 46 599 Td (9) Tj ET
+BT /F1 9 Tf 106 599 Td (116.119.36.22) Tj ET
+BT /F1 9 Tf 293 599 Td (50, 43, 47) Tj ET
+BT /F1 9 Tf 481 599 Td (0%) Tj ET
+BT /F1 9 Tf 46 589 Td (10) Tj ET
+BT /F1 9 Tf 106 589 Td (116.119.164.99) Tj ET
+BT /F1 9 Tf 293 589 Td (45, 40, 61) Tj ET
+BT /F1 9 Tf 481 589 Td (0%) Tj ET
+BT /F1 9 Tf 46 578 Td (11) Tj ET
+BT /F1 9 Tf 106 578 Td (72.14.212.48) Tj ET
+BT /F1 9 Tf 293 578 Td (116, 59, 58) Tj ET
+BT /F1 9 Tf 481 578 Td (0%) Tj ET
+BT /F1 9 Tf 46 568 Td (12) Tj ET
+BT /F1 9 Tf 106 568 Td (142.251.225.207) Tj ET
+BT /F1 9 Tf 293 568 Td (61, 70, 51) Tj ET
+BT /F1 9 Tf 481 568 Td (0%) Tj ET
+BT /F1 9 Tf 46 557 Td (13) Tj ET
+BT /F1 9 Tf 106 557 Td (142.250.214.109) Tj ET
+BT /F1 9 Tf 293 557 Td (144, 60, 96) Tj ET
+BT /F1 9 Tf 481 557 Td (0%) Tj ET
+BT /F1 9 Tf 46 547 Td (14) Tj ET
+BT /F1 9 Tf 106 547 Td (8.8.8.8) Tj ET
+BT /F1 9 Tf 293 547 Td (54, 56, 55) Tj ET
+BT /F1 9 Tf 481 547 Td (0%) Tj ET
+BT /F2 12 Tf 46 531 Td (Summary) Tj ET
+BT /F2 9 Tf 46 517 Td (Status) Tj ET
+BT /F1 9 Tf 196 517 Td (Healthy) Tj ET
+BT /F2 9 Tf 46 506 Td (Health Score) Tj ET
+BT /F1 9 Tf 196 506 Td (100%) Tj ET
+BT /F2 9 Tf 46 495 Td (OSI Layer) Tj ET
+BT /F1 9 Tf 196 495 Td (-) Tj ET
+BT /F2 9 Tf 46 484 Td (Interface) Tj ET
+BT /F1 9 Tf 196 484 Td (Wi-Fi \(10.134.148.122\)) Tj ET
+BT /F2 9 Tf 46 473 Td (Gateway) Tj ET
+BT /F1 9 Tf 196 473 Td (10.134.148.168 [Unknown]) Tj ET
+BT /F2 9 Tf 46 462 Td (WiFi Signal) Tj ET
+BT /F1 9 Tf 196 462 Td (92% \(Himanshu\)) Tj ET
+BT /F2 9 Tf 46 451 Td (Internet) Tj ET
+BT /F1 9 Tf 196 451 Td (Reachable) Tj ET
+BT /F2 9 Tf 46 440 Td (DNS) Tj ET
+BT /F1 9 Tf 196 440 Td (UnKnown \(90ms\)) Tj ET
+BT /F2 9 Tf 46 429 Td (MTU) Tj ET
+BT /F1 9 Tf 196 429 Td (1500 bytes) Tj ET
+BT /F2 9 Tf 46 418 Td (IPv6) Tj ET
+BT /F1 9 Tf 196 418 Td (Enabled \(internet n/a\)) Tj ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000000 00000 n 
+0000000049 00000 n 
+0000000106 00000 n 
+0000000242 00000 n 
+0000000339 00000 n 
+0000000441 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+4222
+%%EOF
