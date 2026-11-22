@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<name>NetPulse Wi-Fi Survey</name>
+  <Placemark>
+    <name>e wing</name>
+    <description>SSID Ayush's A17 | Signal 60% | Down 35.89 Mbps | Ping 25 ms</description>
+    <Point><coordinates>73.890887,18.673376,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>annachi krupa</name>
+    <description>SSID Himanshu | Signal 87% | Down 35.57 Mbps | Ping 48 ms</description>
+    <Point><coordinates>73.890282,18.670595,0</coordinates></Point>
+  </Placemark>
+</Document>
+</kml>

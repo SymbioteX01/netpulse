@@ -1,0 +1,92 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Length 2512 >>
+stream
+BT /F2 17 Tf 46 796 Td (NetPulse - Wi-Fi Survey Report) Tj ET
+BT /F1 9 Tf 46 778 Td (Generated: 10/18/2026, 12:52:48 PM) Tj ET
+BT /F1 9 Tf 46 767 Td (Survey points: 1) Tj ET
+BT /F1 9 Tf 46 756 Td (NetPulse | Wi-Fi Site Survey & Network Analysis) Tj ET
+BT /F2 12 Tf 46 740 Td (Survey Summary) Tj ET
+BT /F2 9 Tf 46 726 Td (Location) Tj ET
+BT /F2 9 Tf 121 726 Td (Coordinates) Tj ET
+BT /F2 9 Tf 189 726 Td (Network) Tj ET
+BT /F2 9 Tf 226 726 Td (Signal) Tj ET
+BT /F2 9 Tf 260 726 Td (RSSI) Tj ET
+BT /F2 9 Tf 293 726 Td (Quality) Tj ET
+BT /F2 9 Tf 331 726 Td (Band/Ch) Tj ET
+BT /F2 9 Tf 373 726 Td (Download) Tj ET
+BT /F2 9 Tf 415 726 Td (Upload) Tj ET
+BT /F2 9 Tf 457 726 Td (Ping) Tj ET
+BT /F2 9 Tf 490 726 Td (Time) Tj ET
+0.82 0.84 0.88 rg 46 714 503 0.7 re f
+BT /F1 9 Tf 46 714 Td (e wing12) Tj ET
+BT /F1 9 Tf 121 714 Td (18.673376, 7~) Tj ET
+BT /F1 9 Tf 189 714 Td (WiFi) Tj ET
+BT /F1 9 Tf 226 714 Td (82%) Tj ET
+BT /F1 9 Tf 260 714 Td (-57) Tj ET
+BT /F1 9 Tf 293 714 Td (Excell~) Tj ET
+BT /F1 9 Tf 331 714 Td (5 GHz/1~) Tj ET
+BT /F1 9 Tf 373 714 Td (87.83 M~) Tj ET
+BT /F1 9 Tf 415 714 Td (23.8 Mb~) Tj ET
+BT /F1 9 Tf 457 714 Td (54 ms) Tj ET
+BT /F1 9 Tf 490 714 Td (2026-10-18~) Tj ET
+BT /F2 12 Tf 46 699 Td (e wing12  |  2026-10-18 07:21) Tj ET
+BT /F2 9 Tf 46 685 Td (SSID) Tj ET
+BT /F1 9 Tf 196 685 Td (Ayush's A17) Tj ET
+BT /F2 9 Tf 46 674 Td (BSSID) Tj ET
+BT /F1 9 Tf 196 674 Td (66:a9:e6:f5:45:ac) Tj ET
+BT /F2 9 Tf 46 663 Td (Network Type) Tj ET
+BT /F1 9 Tf 196 663 Td (WiFi) Tj ET
+BT /F2 9 Tf 46 652 Td (GPS) Tj ET
+BT /F1 9 Tf 196 652 Td (18.673376, 73.890887) Tj ET
+BT /F2 9 Tf 46 641 Td (Band / Channel) Tj ET
+BT /F1 9 Tf 196 641 Td (5 GHz / 149) Tj ET
+BT /F2 9 Tf 46 630 Td (Signal) Tj ET
+BT /F1 9 Tf 196 630 Td (82%  \(-57 dBm\)  Excellent) Tj ET
+BT /F2 9 Tf 46 619 Td (Link Speed) Tj ET
+BT /F1 9 Tf 196 619 Td (TX 150 Mbps / RX 150 Mbps) Tj ET
+BT /F2 9 Tf 46 608 Td (Standard / Security) Tj ET
+BT /F1 9 Tf 196 608 Td (802.11n / WPA2-Personal / CCMP) Tj ET
+BT /F2 9 Tf 46 597 Td (Distance \(est.\)) Tj ET
+BT /F1 9 Tf 196 597 Td (4.8 m) Tj ET
+BT /F2 9 Tf 46 586 Td (Internet) Tj ET
+BT /F1 9 Tf 196 586 Td (Down 87.83 Mbps / Up 23.8 Mbps) Tj ET
+BT /F2 9 Tf 46 575 Td (Latency) Tj ET
+BT /F1 9 Tf 196 575 Td (Ping 54 ms / Jitter 44.5 ms / Loss 0%) Tj ET
+BT /F2 9 Tf 46 564 Td (LAN) Tj ET
+BT /F1 9 Tf 196 564 Td (Connected) Tj ET
+BT /F2 9 Tf 46 553 Td (Gateway / IP) Tj ET
+BT /F1 9 Tf 196 553 Td (10.115.29.39 / 10.115.29.214) Tj ET
+BT /F2 9 Tf 46 542 Td (Notes) Tj ET
+BT /F1 9 Tf 196 542 Td (qww) Tj ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000000 00000 n 
+0000000049 00000 n 
+0000000106 00000 n 
+0000000242 00000 n 
+0000000339 00000 n 
+0000000441 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+3005
+%%EOF
